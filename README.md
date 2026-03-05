@@ -29,9 +29,10 @@ You update cura, settings are gone. You swtich to a new pc, settings gone. You l
 ### Linux
 
 ```shell
-docker run \ 
-  -d \
+docker run -d \
   --name doganm95-cura-evolved \
+  -e USER_ID=$(id -u) \
+  -e GROUP_ID=$(id -g) \
   -p 5800:5800 \
   -p 5900:5900 \
   -v "<desired_data_folder>:/config/xdg/data" \
@@ -43,8 +44,7 @@ docker run \
 ### WIndows
 
 ```powershell
-docker run `
-  -d `
+docker run -d `
   --name doganm95-cura-evolved `
   -p 5800:5800 `
   -p 5900:5900 `
