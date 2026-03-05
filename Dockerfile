@@ -66,8 +66,7 @@ RUN mkdir -p /etc/openbox/ && \
     echo "<Title>UltiMaker Cura</Title>" >> /etc/openbox/main-window-selection.xml
 
 # Create input/output directories and adjust permissions
-RUN mkdir -p /app/input /app/output && \
-    chmod -R 777 /app
+RUN mkdir -p /app/input /app/output && 
 
 # RUN echo '#!/bin/sh\n# Override what is set by the baseimage and do not set the variable.\nexit 100' > /etc/cont-env.d/LIBGL_DRIVERS_PATH
 
