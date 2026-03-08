@@ -49,13 +49,6 @@ RUN mkdir -p /app/squashfs-root/ /root/.local /config
 RUN chmod +x *.AppImage && \
     ./*linux-X64.AppImage --appimage-extract
 
-# Create a non-root user
-RUN useradd -ms /bin/bash non-root-user
-
-# Change ownership for /config and /root/.local to non-root-user
-RUN chown -R non-root-user:non-root-user /config && \
-    chown -R non-root-user:non-root-user /root/.local
-
 # Set environment variables
 ENV APP_NAME="Cura"
 
@@ -69,6 +62,9 @@ RUN mkdir -p /etc/openbox/ && \
 RUN mkdir -p /app/input /app/output
 
 # RUN echo '#!/bin/sh\n# Override what is set by the baseimage and do not set the variable.\nexit 100' > /etc/cont-env.d/LIBGL_DRIVERS_PATH
+
+# Delete any appimage installer file
+RUN rm *.AppImage
 
 # Copy startup script
 COPY ./startapp.sh /startapp.sh
