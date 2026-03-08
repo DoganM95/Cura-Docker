@@ -6,9 +6,6 @@ export CURRENT_CURA_VERSION=$(cat /app/current_cura_version.txt)
 # Extract major_minor part to use as folder name
 CURRENT_CURA_VERSION_MAJOR_MINOR=$(echo $CURRENT_CURA_VERSION | cut -d'.' -f1,2)
 
-# Fix permissions (just in case)
-chmod -R 777 /config/xdg/*
-
 # Print current version
 echo "current cura version: $CURRENT_CURA_VERSION"
 echo "current cura major_minor version: $CURRENT_CURA_VERSION_MAJOR_MINOR"
