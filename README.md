@@ -10,17 +10,13 @@ This is currently just a dockerized, usable cura application, that can be connec
 - Works on hosts without a GPU
   - tested on a pc with a 5600x and no GPU
 
-# Goal
+# Todo's
 
-The goal is automating the slicing process, so files can be put in an `/input` folder and automatically processed versions land in an `/ouput` folder.
-
-The GUI is there, so the user can modify all settings and install extensions to achieve more automation.  
-The initial motivation to create this project was cura's incompetence in persisting my user-settings.  
-You update cura, settings are gone. You swtich to a new pc, settings gone. You log in to your account, no settings sync.  
+- [ ] Automate the slicing process, so files can be put in an `/input` folder and automatically processed versions land in an `/ouput` folder.
 
 # Setup
 
-## Docker container
+## Docker
 
 ### Linux
 
