@@ -10,10 +10,6 @@ This is currently just a dockerized, usable cura application, that can be connec
 - Works on hosts without a GPU
   - tested on a pc with a 5600x and no GPU
 
-# Todo's
-
-- [ ] Automate the slicing process, so files can be put in an `/input` folder and automatically processed versions land in an `/ouput` folder.
-
 # Setup
 
 ## Docker
