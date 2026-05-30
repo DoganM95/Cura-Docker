@@ -18,10 +18,6 @@ The GUI is there, so the user can modify all settings and install extensions to 
 The initial motivation to create this project was cura's incompetence in persisting my user-settings.  
 You update cura, settings are gone. You swtich to a new pc, settings gone. You log in to your account, no settings sync.  
 
-# Notes
-
-- Cura version `5.7.0` has a flaw and fails to slice anything, use latest `5.6.0` package instead
-
 # Setup
 
 ## Docker container
