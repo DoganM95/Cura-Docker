@@ -8,7 +8,7 @@ This is currently just a dockerized, usable cura application, that can be connec
 - Web UI available under [localhost:5800](http://localhost:5800) with any browser
 - VNC remote connection available under [localhost:5900](http://localhost:5900)
 - Works on hosts without a GPU
-  - tested on a NAS server with a 5600x and no GPU
+  - tested on a pc with a 5600x and no GPU
 
 # Goal
 
